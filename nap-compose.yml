@@ -1,0 +1,6 @@
+node:
+     image: docker.iwanna.xyz:5000/maven
+     command: java -jar -Xms512m -Xmx1024m /nap/hbaseexport.jar
+     network: wangwy
+     volumes:
+         - /nap/:/
